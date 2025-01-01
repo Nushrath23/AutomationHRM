@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Playwright Tests</title>
+    <script>
+        async function runTests() {
+            try {
+                const response = await fetch('http://localhost:3000/run-tests', { method: 'POST' });
+                const result = await response.text();
+                alert(`Test Results:\n${result}`);
+            } catch (error) {
+                alert(`Error running tests: ${error.message}`);
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="runTests()">Run Playwright Tests</button>
+</body>
+</html>

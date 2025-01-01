@@ -1,0 +1,25 @@
+{
+  "name": "antlerhrm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "docx": "^9.1.0",
+    "express": "^4.21.2",
+    "nodemailer": "^6.9.16"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "description": ""
+}
